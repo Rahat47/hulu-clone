@@ -5,8 +5,8 @@ const Nav = () => {
     const router = useRouter();
 
     return (
-        <nav className="relative">
-            <div className="flex items-center px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll h-20 scrollbar-hide">
+        <nav className="relative category_nav_container">
+            <div className="flex category_nav items-center px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 h-20">
                 {Object.entries(requests).map(([key, { title, url }]) => (
                     <h2
                         className=" last:pr-24 cursor-pointer transition duration-150 transform hover:scale-125 hover:text-white active:text-red-500"
