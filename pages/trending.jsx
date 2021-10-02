@@ -40,8 +40,8 @@ const trending = ({ trendings, trendingPeople }) => {
 export default trending;
 
 export const getServerSideProps = async () => {
-    const trendingURL = `${process.env.BASE_URL}/trending/movie/week?api_key=${process.env.API_KEY}`;
-    const trendingPeopleUrl = `${process.env.BASE_URL}/trending/person/week?api_key=${process.env.API_KEY}`;
+    const trendingURL = `https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.API_KEY}`;
+    const trendingPeopleUrl = `https://api.themoviedb.org/3/trending/person/week?api_key=${process.env.API_KEY}`;
 
     const res = await fetch(trendingURL);
     const data = await res.json();
