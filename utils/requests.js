@@ -1,51 +1,51 @@
 const API_KEY = process.env.API_KEY
 
 export default {
-    fetchTrending: {
+    Trending: {
         title: "Trending",
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
     },
-    fetchTopRated: {
+    Top_Rated: {
         title: "Top Rated",
         url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
     },
-    fetchActionMovies: {
+    Action: {
         title: "Action",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=28`,
     },
-    fetchComedyMovies: {
+    Comedy: {
         title: "Comedy",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=35`,
     },
-    fetchHorrorMovies: {
+    Horror: {
         title: "Horror",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=27`,
     },
-    fetchRomanceMovies: {
+    Romance: {
         title: "Romance",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=10749`,
     },
-    fetchDocumentaries: {
+    Documentaries: {
         title: "Documentaries",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=99`,
     },
-    fetchMystery: {
+    Mystery: {
         title: "Mystery",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=9648`,
     },
-    fetchSciFi: {
+    SciFi: {
         title: "Sci-Fi",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=878`,
     },
-    fetchWestern: {
+    Western: {
         title: "Western",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=37`,
     },
-    fetchAnimation: {
+    Animation: {
         title: "Animation",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=16`,
     },
-    fetchTV: {
+    TV: {
         title: "TV",
         url: `/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=10770`,
     },
